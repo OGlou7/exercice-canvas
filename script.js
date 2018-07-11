@@ -97,13 +97,16 @@ ctx.lineTo(160,280);
 ctx.moveTo(40,280);
 ctx.lineTo(160,280);
 // porte
+ctx.fillStyle = "blue";
 ctx.moveTo(80,280);
 ctx.lineTo(80,230);
+ctx.fillStyle = "blue";
 ctx.moveTo(120,280);
 ctx.lineTo(120,230);
+ctx.fillStyle = "blue";
 ctx.moveTo(80,230);
 ctx.lineTo(120,230);
-
+ctx.fill();
 ctx.stroke();
 ctx.closePath();
 
@@ -123,9 +126,38 @@ ctx.arc(60, 65, 5, 0, Math.PI * 2, true);
 ctx.moveTo(95, 65);
 ctx.arc(90, 65, 5, 0, Math.PI * 2, true);
 //corps
+ctx.fillStyle = "blue";
 ctx.moveTo(75,125);
 ctx.lineTo(75,230);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
 
+var c = document.getElementById("star");
+var ctx = c.getContext("2d");
+ctx.strokeStyle = "yellow";
+ctx.beginPath();
+ctx.moveTo(100,50);
+ctx.lineTo(40,150);
+ctx.lineTo(150,90);
+ctx.lineTo(40,90);
+ctx.lineTo(150,150);
+ctx.lineTo(100,50);
+ctx.stroke();
+ctx.closePath();
 
+var c = document.getElementById("heart");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(75, 40);
+ctx.fillStyle = "red";
+ctx.strokeStyle = "red";
+ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
+ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
+ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
+ctx.fill();
 ctx.stroke();
 ctx.closePath();
