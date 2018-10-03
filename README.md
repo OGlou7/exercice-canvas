@@ -2,6 +2,10 @@
 
 - **Repository**: `exercice-canvas`
 
+- **Technologies**:
+  - HTML
+  - JAVASCRIPT
+
 - **Made by**  
   - [Marie Louise Ogdoc](https://github.com/OGlou7)
 
